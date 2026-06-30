@@ -1,0 +1,21 @@
+# Ignore everything
+*
+
+# But keep this .gitignore file
+!.gitignore
+
+# Allow only these folders
+!app/
+!app/**
+
+!distance/
+!distance/**
+
+!configs/
+!configs/**
+
+!output/
+!output/**
+
+!Weights/
+!Weights/**
