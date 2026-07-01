@@ -89,6 +89,8 @@ class ProcessingThread(QThread):
     def draw_results(self, frame):
         try:
             image_width, image_height = self.target_resolution
+            frame = self.ground_zone.draw_ground_zone(frame)
+
             for result in self.current_results:
                 if result.boxes is not None:
                     for box in result.boxes:
@@ -139,9 +141,6 @@ class ProcessingThread(QThread):
                                 text_color,
                                 2,
                             )
-                            # Draw ground zone based on distance and centroid
-                            frame = self.ground_zone.draw_ground_zone(frame, distance, centroid=centroid)
-
                         self.detections_logger.info(
                             f"Detection: ClassID={label_index}, ClassName={label_name}, "
                             f"Confidence={confidence:.2f}, Timestamp={datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')}"

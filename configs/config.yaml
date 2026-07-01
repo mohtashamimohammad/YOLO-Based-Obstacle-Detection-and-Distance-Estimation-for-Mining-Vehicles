@@ -2,8 +2,6 @@ model_path: "best.pt"
 camera_sources:
   #- "rtsp://admin:123456@192.168.1.188:554/ch01.264"
   #- "rtsp://admin:123456@192.168.1.189:554/ch01.264"
-  - "videos/movie.mp4"
-
 
 app_type: 1
 target_fps: 5
@@ -13,4 +11,4 @@ classes:
   - "dump truck"
 camera_height: 2  # Camera height in meters
 target_resolution: [640, 640]  # Fixed resolution for all inputs
-output_path : "output/movie.mp4"
+output_path : "output/demo.mp4"
