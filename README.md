@@ -10,15 +10,13 @@ best.pt
 
 ## Demo
 
-Add your sample output image or GIF here:
+### Sample Output
 
-```md
 ![Sample Output](assets/sample_output.png)
-```
 
-```md
+### Demo GIF
+
 ![Demo GIF](assets/demo.gif)
-```
 
 Recommended folder:
 
@@ -155,9 +153,7 @@ app.log
 detections.log
 ```
 
-## Notes
 
-Distance estimation is approximate. It depends on camera position, camera height, object detection quality, bounding-box stability, and perspective. The warning zones are visual guidance and should not be treated as a fully calibrated safety system without further calibration and testing.
 
 ## Author
 
