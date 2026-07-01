@@ -1,21 +1,58 @@
-# Ignore everything
+# Ignore everything by default
 *
 
-# But keep this .gitignore file
+# Keep this gitignore file
 !.gitignore
 
-# Allow only these folders
+# Project documentation
+!README.md
+
+# Requirements files
+!requirements.txt
+!req.txt
+
+# Source code
 !app/
 !app/**
 
-!distance/
-!distance/**
-
+# Config files
 !configs/
 !configs/**
 
-!output/
-!output/**
+# Demo/media assets for README
+!assets/
+!assets/**
 
+# Optional: keep model weights folder if you really want to commit weights
 !Weights/
 !Weights/**
+
+# Optional: keep distance folder if you actually have a folder named distance/
+!distance/
+!distance/**
+
+
+# Ignore Python cache files even inside allowed folders
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
+venv/
+.venv/
+env/
+
+# Ignore logs
+*.log
+app.log
+detections.log
+
+# Ignore generated outputs
+output/
+*.avi
+
+# Ignore local OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
