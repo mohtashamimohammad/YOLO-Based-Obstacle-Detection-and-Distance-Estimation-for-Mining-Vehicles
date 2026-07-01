@@ -18,13 +18,7 @@ best.pt
 
 ![Demo GIF](assets/demo.gif)
 
-Recommended folder:
 
-```text
-assets/
-├── sample_output.png
-└── demo.gif
-```
 
 ## Features
 
